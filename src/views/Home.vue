@@ -1,7 +1,8 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <!-- <img alt="Vue logo" src="../assets/logo.png" />
+    <HelloWorld msg="Welcome to Your Vue.js App" /> -->
+    版本:{{process}}
   </div>
 </template>
 
@@ -13,6 +14,11 @@ export default {
   name: "home",
   components: {
     HelloWorld
+  },
+  data () {
+    return {
+      process: process
+    }
   }
 };
 </script>
