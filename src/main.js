@@ -8,6 +8,7 @@ import { Button, Select, Option } from 'element-ui';
 // 自定义指令
 import * as directives from './directives/index.js'
 // 注册
+// Vue.use(directives)
 Object.keys(directives).forEach(k => Vue.directive(k, directives[k]))
 Vue.mixin(Mixin);
 Vue.use(Button)
